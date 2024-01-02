@@ -1,0 +1,146 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(to left, rgb(197, 19, 19), rgb(0, 0, 0));
+  font-family: sans-serif;
+  color: red;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+h1 {
+  color: #29da8d;
+  cursor: pointer;
+}
+.container {
+  border: 5px solid rgb(59, 255, 5);
+  height: 90vh;
+  background-color: black;
+  width: 70vw;
+  border-radius: 9px;
+}
+
+.inputField {
+  border-bottom: 1px solid;
+  padding: 30px;
+  align-content: center;
+}
+.inputField section {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1em;
+}
+.inputField label {
+  margin-right: 20px;
+  color: rgb(232, 241, 56);
+  text-shadow: 1px 0 rgb(21, 0, 255);
+  font-weight: 600;
+  font-size: 1.4em;
+}
+.inputField input {
+  border: none;
+  border-radius: 5px;
+  box-shadow: 1px 1px 50px rgb(21, 0, 255);
+  padding: 3px;
+  text-align: center;
+  color: rgb(29, 9, 83);
+  font-weight: bolder;
+  font-size: 1.1em;
+}
+.inputField button {
+  margin-left: 30%;
+  padding: 10px 100px;
+  border: 1px solid white;
+  border-radius: 10px;
+  background-color: transparent;
+  color: #fff;
+  box-shadow: 1px 1px 10px rgb(21, 0, 255);
+  cursor: pointer;
+}
+button:hover {
+  color: rgb(121, 15, 226);
+  font-size: 0.9em;
+}
+.displayField {
+  display: flex;
+  justify-content: center;
+}
+.displayField table {
+  margin-top: 20px;
+  cursor: pointer;
+  border-spacing: 0;
+}
+.displayField td {
+  width: 100px;
+  color: #17b127;
+  text-align: center;
+}
+
+.displayField .op {
+  width: 50px;
+  color: #140ec2;
+}
+
+.displayField td:hover {
+  background-color: rgb(19, 2, 2);
+  box-shadow: 1px 1px 2px, #140ec2;
+  font-size: 1.2em;
+  color: #d70fc3;
+}
+.displayField tr:hover {
+  background-color: rgb(28, 26, 26);
+  font-size: 1.1em;
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    width: 90vw;
+  }
+
+  .inputField label {
+    font-size: 4vw;
+    margin-right: 1vw;
+  }
+
+  .inputField input {
+    font-size: 3vw;
+    box-shadow: 1px 1px 3vw rgb(21, 0, 255);
+    padding: 1vw;
+  }
+
+  .inputField button {
+    margin-left: 5vw;
+    padding: 2vw 5vw;
+    font-size: 2.5vw;
+    box-shadow: 1px 1px 3vw rgb(21, 0, 255);
+  }
+
+  .displayField table {
+    margin-top: 3vw;
+  }
+
+  .displayField td {
+    width: 20vw;
+    font-size: 2vw;
+  }
+
+  .displayField .op {
+    width: 10vw;
+    font-size: 1.5vw;
+  }
+
+  .displayField td:hover {
+    font-size: 2.5vw;
+  }
+
+  .displayField tr:hover {
+    font-size: 2vw;
+  }
+}
